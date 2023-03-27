@@ -1,38 +1,121 @@
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  /* font-family: "Verdana", sans-serif; */
+  line-height: 1.5;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
 .App {
-  text-align: center;
+  border-radius: 2%;
+  /* background-color: rgb(178, 22, 54);
+  box-shadow: rgb(151, 50, 50) 0px 0px 10px 10px; */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header {
+  height: 800px;
+  background-color: white;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.button-avocat,.button-mediateur {
+  /* color: rgb(178, 22, 54);
+  background-color: white;
+  cursor: pointer; 
+  text-decoration: none;
+  font-size: 1.2em;
+  font-weight: 600;
+  border: gray 1px solid;
+  width: 150px; */
+  border: none;
+  background-color: inherit;
+  font-size: 1.2em;
+  font-weight: 600;
+  color: rgb(178, 22, 54);
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.button-avocat {
+  /* padding-right: 8px;
+  border-radius: 25px 0px 0px 25px; */
+  
+}
+.button-mediateur {
+  /* padding-left: 8px;
+  border-radius: 0px 25px 25px 0px;
+  border-left: none; */
+}
+.button-avocat:hover,.button-mediateur:hover {
+  /* color: white;
+  background-color: rgb(178, 22, 54); */
+  text-decoration: underline;
+  color: rgb(178, 22, 54);
+}
+
+.nav-item >.active {
+  /* color: white;
+  background-color: rgb(178, 22, 54); */
+  text-decoration: underline;
+  color: rgb(178, 22, 54);
+}
+
+
+
+.content{
+  margin-top: 800px;
+  background-color: whitesmoke;
+}
+
+
+.Info,.About {
+  background-color: #ffffff;
+  color: #000000e3;
+  padding: 1em;
+  border-radius: 10px;
+  /* box-shadow: rgb(36, 36, 36) 0px 0px 10px 10px; */
+}
+
+.Header {
+  height: 20%;
+  overflow: auto;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.Contact {
+  padding: 1em;
+  background-color: rgb(178, 22, 54);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.contact-label {
+  font-size: 1.1em;
+  font-weight: 600;
+  margin-bottom: 2px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.contact-info {
+  font-size: 1em;
+}
+
+.contact-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.contact-link:hover {
+  color: #f0f0f038;
+  text-decoration: underline;
 }
