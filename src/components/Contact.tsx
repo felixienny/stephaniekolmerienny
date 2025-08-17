@@ -42,10 +42,6 @@ function Contact() {
             </p>
             <p className="contact-label">Horaires</p>
             <p className="contact-info">Lundi au Vendredi de 9h00 à 18h00</p>
-            {/* <button type="button" className="btn btn-primary">
-            <i className="bi bi-envelope-at"></i>
-            Button
-          </button> */}
           </div>
           <div className="col-xl">
             <iframe
