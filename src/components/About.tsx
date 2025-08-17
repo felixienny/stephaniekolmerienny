@@ -1,13 +1,12 @@
 import React from "react";
-import stephanie_kolmer_ienny from "./stephanie_kolmer_ienny.jpg";
 
 function About() {
   return (
-    <div className="About container text-justify">
+    <div className="About container text-justify p-4">
       <div className="grid row">
         <div className="col-lg">
           <img
-            src={stephanie_kolmer_ienny}
+            src="/stephanie_kolmer_ienny.jpg"
             alt="Stephanie Kolmer Ienny"
             className="img-fluid rounded mx-auto d-block"
           />

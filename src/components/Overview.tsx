@@ -1,11 +1,10 @@
 import React from "react";
-import stephanie_kolmer_ienny from "./stephanie_kolmer_ienny.jpg";
 
-function Overview(props: { job: string }) {
+function Overview(props: { job: "droit" | "mediation" }) {
   return (
-    <div className="Overview">
-      <h1>{props.job === "avocat" ? "Avocat" : "Médiateur"}</h1>
-      {props.job === "avocat" ? (
+    <div className="Overview p-4">
+      <h1>{props.job === "droit" ? "Avocat" : "Médiatrice"}</h1>
+      {props.job === "droit" ? (
         <div>
           <p>
             Stéphanie KOLMER-IENNY est également avocate spécialisée en droit de
