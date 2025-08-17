@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 function Contact() {
   return (
@@ -11,11 +11,11 @@ function Contact() {
             <p className="contact-info">
               <a
                 className="contact-link"
-                href="https://www.google.com/maps/place/4+Rue+Rockefeller,+51100+Reims"
+                href="https://www.google.com/maps/place/8+Rue+Thiers,+51100+Reims"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                4 Rue Rockefeller, 51100 Reims
+                8 Rue Thiers, 51100 Reims
               </a>
             </p>
             <p className="contact-label">Téléphone</p>
@@ -33,11 +33,11 @@ function Contact() {
             <p className="contact-info">
               <a
                 className="contact-link"
-                href="mailto:melkor-avocats.sk@orange.fr"
+                href="mailto:melkor@stephaniekolmerienny.fr"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                melkor-avocats.sk@orange.fr
+                melkor@stephaniekolmerienny.fr
               </a>
             </p>
             <p className="contact-label">Horaires</p>
