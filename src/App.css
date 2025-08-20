@@ -1,5 +1,3 @@
-
-
 h1,
 h2,
 h3,
@@ -15,15 +13,12 @@ a {
 }
 
 body {
-  /* font-family: "Verdana", sans-serif; */
   line-height: 1.5;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .App {
   border-radius: 2%;
-  /* background-color: rgb(178, 22, 54);
-  box-shadow: rgb(151, 50, 50) 0px 0px 10px 10px; */
 }
 
 .header {
@@ -31,56 +26,33 @@ body {
   background-color: white;
 }
 
-.button-avocat,.button-mediateur {
-  /* color: rgb(178, 22, 54);
-  background-color: white;
-  cursor: pointer; 
-  text-decoration: none;
-  font-size: 1.2em;
-  font-weight: 600;
-  border: gray 1px solid;
-  width: 150px; */
+.button-avocat,
+.button-mediateur {
   border: none;
   background-color: inherit;
   font-size: 1.2em;
   font-weight: 600;
   color: rgb(178, 22, 54);
-
 }
 
-.button-avocat {
-  /* padding-right: 8px;
-  border-radius: 25px 0px 0px 25px; */
-  
-}
-.button-mediateur {
-  /* padding-left: 8px;
-  border-radius: 0px 25px 25px 0px;
-  border-left: none; */
-}
-.button-avocat:hover,.button-mediateur:hover {
-  /* color: white;
-  background-color: rgb(178, 22, 54); */
+.button-avocat:hover,
+.button-mediateur:hover {
   text-decoration: underline;
   color: rgb(178, 22, 54);
 }
 
-.nav-item >.active {
-  /* color: white;
-  background-color: rgb(178, 22, 54); */
+.nav-item > .active {
   text-decoration: underline;
   color: rgb(178, 22, 54);
 }
 
-
-
-.content{
+.content {
   margin-top: 800px;
   background-color: whitesmoke;
 }
 
-
-.Info,.About {
+.Info,
+.About {
   background-color: #ffffff;
   color: #000000e3;
   padding: 1em;
