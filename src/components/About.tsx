@@ -4,14 +4,14 @@ function About() {
   return (
     <div className="About container text-justify p-4">
       <div className="grid row">
-        <div className="col-lg">
+        <div className="col-lg-4">
           <img
             src="/stephanie_kolmer_ienny.jpg"
             alt="Stephanie Kolmer Ienny"
             className="img-fluid rounded mx-auto d-block"
           />
         </div>
-        <div className="col-lg pt-2">
+        <div className="col-lg-8 pt-2">
           <h2>Stéphanie KOLMER-IENNY</h2>
           <p>
             Maître Stéphanie KOLMER-IENNY est avocat inscrit au Barreau de
