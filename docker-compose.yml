@@ -1,0 +1,19 @@
+services:
+  web:
+    image: node:lts
+    working_dir: /app
+    volumes:
+      - .:/app
+      - /app/node_modules
+    ports:
+      - 3000
+    labels:
+      - "traefik.http.routers.stephaniekolmerienny.rule=Host(`stephaniekolmerienny.localhost`)"
+      - "traefik.http.services.stephaniekolmerienny.loadbalancer.server.port=3000"
+    networks:
+      - web
+    command: sh -c "npm install && npm start"
+
+networks:
+  web:
+    external: true
