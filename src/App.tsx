@@ -6,31 +6,31 @@ import Overview from "./components/Overview";
 import Header from "./components/Header";
 
 function App(props: { job: "droit" | "mediation" }) {
-  window.onscroll = function () {
-    const header: any = document.querySelector(".header");
-    const logo: any = document.querySelector(".navbar-logo");
+    // const maxHeight = window.innerHeight * 0.7;
+    // const minHeight = 80;
+    // window.onscroll = function () {
+    //     const header = document.querySelector(".header") as HTMLElement;
+    //     const logo = document.querySelector(".navbar-logo") as HTMLElement;
+    //     const scrollY = window.scrollY;
+    //     const newHeight = Math.max(minHeight, maxHeight - scrollY);
 
-    if (!header || !logo) return;
+    //     header.style.height = newHeight + 'px';
+    //     // logo.style.height = newHeight + 'px';
+    // };
 
-    if (window.pageYOffset > 600) return;
+    return (
+        <div className="App">
+            <div className="my-2">
+                <Header job={props.job} />
+                <div className="container content">
+                    <Overview job={props.job} />
+                    <About />
+                </div>
 
-    header.style.height = 800 - window.pageYOffset + "px";
-    logo.style.height = 750 - window.pageYOffset + "px";
-  };
-
-  return (
-    <div className="App">
-      <div className="my-2">
-        <Header job={props.job} />
-        <div className="container content">
-          <Overview job={props.job} />
-          <About />
+                <Contact />
+            </div>
         </div>
-
-        <Contact />
-      </div>
-    </div>
-  );
+    );
 }
 
 export default App;

@@ -22,12 +22,12 @@ body {
 }
 
 .header {
-  height: 800px;
   background-color: white;
 }
 
-.button-avocat,
-.button-mediateur {
+.navbar .btn {
+  min-width: 140px;
+  font-weight: 500;
   border: none;
   background-color: inherit;
   font-size: 1.2em;
@@ -35,10 +35,56 @@ body {
   color: rgb(178, 22, 54);
 }
 
-.button-avocat:hover,
-.button-mediateur:hover {
+.navbar .btn:hover {
   text-decoration: underline;
   color: rgb(178, 22, 54);
+}
+
+.navbar .btn-selected {
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.navbar-brand img {
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .navbar .container-fluid {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  /* Disposition en ligne, logo + bouton hamburger */
+  .navbar-nav, .navbar-toggler {
+    display: flex;
+    align-items: center;
+  }
+
+  /* Le bouton hamburger est aligné à droite */
+  .navbar-toggler {
+    margin-left: auto;  /* Force le bouton hamburger à la droite */
+  }
+
+  /* Les éléments du menu sont centrés */
+  .navbar-collapse {
+    text-align: center;
+  }
+
+  .navbar-nav {
+    width: 100%;
+  }
+
+  /* Réduit la taille du logo pour mobile */
+  .navbar-brand img {
+    max-height: 50px;
+  }
+}
+
+@media (min-width: 768px) {
+  .navbar-toggler {
+    display: none; /* Masquer le bouton sur les grands écrans */
+  }
 }
 
 .nav-item > .active {
@@ -47,7 +93,7 @@ body {
 }
 
 .content {
-  margin-top: 800px;
+  margin-top: 204px;
   background-color: whitesmoke;
 }
 
