@@ -11,7 +11,6 @@ function Header(props: { job: 'droit' | 'mediation' }) {
             src={props.job === 'droit' ? '/melkor_droit.png' : '/melkor_mediation.png'}
             alt="Logo"
             className="img-fluid"
-            style={{ maxHeight: '60px', objectFit: 'contain' }}
           />
         </a>
 

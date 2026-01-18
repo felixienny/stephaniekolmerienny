@@ -79,22 +79,53 @@ body {
   .navbar-brand img {
     max-height: 50px;
   }
+
+  .content {
+    margin-top: 80px;
+  }
 }
 
+/* Pour les grands écrans (min-width: 768px) */
 @media (min-width: 768px) {
   .navbar-toggler {
-    display: none; /* Masquer le bouton sur les grands écrans */
+    display: none;  /* Masquer le bouton hamburger sur grand écran */
+  }
+
+  /* Augmenter la taille du logo sur les grands écrans */
+  .navbar-brand img {
+    max-height: 150px;  /* Logo plus grand sur grand écran */
+  }
+
+  /* Centrer les éléments dans la navbar */
+  .navbar .container-fluid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .navbar-nav {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);  /* Centrer les boutons horizontalement */
+    text-align: center;
+  }
+
+  .navbar-nav .nav-item {
+    display: inline-block;
+  }
+
+  .navbar-nav .btn {
+    margin: 0 20px;  /* Ajouter de l'espace entre les boutons */
+  }
+
+  .content {
+    margin-top: 204px;
   }
 }
 
 .nav-item > .active {
   text-decoration: underline;
   color: rgb(178, 22, 54);
-}
-
-.content {
-  margin-top: 204px;
-  background-color: whitesmoke;
 }
 
 .Info,
@@ -110,6 +141,12 @@ body {
   height: 20%;
   overflow: auto;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.content {
+  padding: 2em;
+  min-height: 60vh;
+  background-color: whitesmoke;
 }
 
 .Contact {
