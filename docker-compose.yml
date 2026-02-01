@@ -3,8 +3,11 @@ services:
     image: node:lts
     working_dir: /app
     volumes:
-      - .:/app
-      - /app/node_modules
+      - ./src:/app/src
+      - ./package.json:/app/package.json
+      - ./tsconfig.json:/app/tsconfig.json
+      - ./public:/app/public
+      - ./docs:/app/docs
     ports:
       - 3000
     labels:

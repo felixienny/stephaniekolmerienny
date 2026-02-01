@@ -4,7 +4,6 @@ function Droit() {
     return (
         <div className="Overview">
             <h1>Avocat</h1>
-
             <div>
                 <p>Maître Stéphanie KOLMER-IENNY est avocat depuis 1992.</p>
                 <p>Dans le cadre d’une activité généraliste, elle développe notamment ses compétences en droit de la famille, des personnes et de leur patrimoine (divorce, séparation, garde d’enfants séparations, fixation de pension alimentaire, successions), ainsi que dans le contentieux civil et commercial des contrats et de la responsabilité.</p>
