@@ -3,9 +3,10 @@
     "version": "1.0.0",
     "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
     "main": "src/index.tsx",
+    "homepage": "./",
     "scripts": {
         "start": "npx react-scripts start",
-        "build": "npx react-scripts build && mv build/* docs/",
+        "build": "npx react-scripts build && rm -rf docs/* && mv build/* docs && echo 'www.stephaniekolmerienny.fr' > docs/CNAME",
         "eject": "npx react-scripts eject"
     },
     "dependencies": {
